@@ -1,0 +1,44 @@
+{
+  "companies" : [
+    {
+      "name": "HCL",
+      "domain" : "Android_development",
+      "offers" : "placement",
+      "pay": 1000000,
+      "founding_year": 1976,
+      "annual_increment": 10000,
+      "probation_period": 3
+    },
+    {
+      "name": "Infosys",
+      "domain" : "blockchain",
+      "offers" : "internship",
+      "pay": 2000,
+      "founding_year": 1981
+    },
+    {
+      "name": "Zoho",
+      "domain" : "website_development",
+      "offers" : "internship",
+      "pay": 10000,
+      "founding_year": 1996
+    },
+    {
+      "name": "HCL",
+      "domain" : "deep_learning",
+      "offers" : "placement",
+      "pay": 2000000,
+      "founding_year": 1976,
+      "annual_increment": 20000,
+      "probation_period": 2
+    },
+    {
+      "name": "Zerodha",
+      "domain" : "deep_learning",
+      "offers" : "internship",
+      "pay": 10000,
+      "founding_year": 2019
+    }
+  ]
+}
+
