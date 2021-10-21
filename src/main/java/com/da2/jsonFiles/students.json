@@ -4,30 +4,35 @@
       "name" : "Aravind",
       "skillset" : ["deep_learning"],
       "future_plans" : ["placement", "internship"],
+      "interest" : ["deep_learning", "blockchain"],
       "aiming_for" : "big_companies"
     },
     {
       "name" : "Abhishek",
       "skillset" : ["Android_development"],
       "future_plans" : ["internship"],
+      "interest" : ["Android_development", "ios_development"],
       "aiming_for" : "startups"
     },
     {
       "name" : "Jarun",
       "skillset" : ["deep_learning", "Android_development"],
       "future_plans" : ["internship", "higherStudies"],
+      "interest" : ["deep_learning", "Android_development", "machine_learning"],
       "aiming_for" : "big_companies"
     },
     {
       "name" : "Roshan",
       "skillset" : ["website_development"],
+      "interest" : ["website_development", "Android_development"],
       "future_plans" : ["placement"],
       "aiming_for" : "big_companies"
     },
     {
       "name" : "Mohana Ganesh",
       "skillset" : ["reinforcement_learning"],
-      "future_plans" : ["higherStudies"]
+      "future_plans" : ["higherStudies"],
+      "interest" : ["reinforcement_learning", "deep_learning"]
     }
   ]
 }

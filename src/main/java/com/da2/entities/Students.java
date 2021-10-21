@@ -18,19 +18,23 @@ public class Students {
     public String aiming_for;
 
     public Students(JSONObject stud) {
-        skillSet = new ArrayList<String>();
-        interest = new ArrayList<String>();
-        futurePlan = new ArrayList<String>();
-        recommended_companies = new ArrayList<Company>();
+        skillSet = new ArrayList<>();
+        interest = new ArrayList<>();
+        futurePlan = new ArrayList<>();
+        recommended_companies = new ArrayList<>();
 
         studentName = (String) stud.get("name");
         JSONArray skills = (JSONArray) stud.get("skillset");
         for(Object s : skills) {
-            skillSet.add((String) s);
+            this.skillSet.add((String) s);
+        }
+        JSONArray interest = (JSONArray) stud.get("interest");
+        for(Object s : interest) {
+            this.interest.add((String) s);
         }
         JSONArray future_plans = (JSONArray) stud.get("future_plans");
         for(Object f : future_plans) {
-            futurePlan.add((String) f);
+            this.futurePlan.add((String) f);
         }
         if(stud.get("aiming_for") != null) {
             this.aiming_for = (String) stud.get("aiming_for");
