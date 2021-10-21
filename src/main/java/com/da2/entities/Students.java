@@ -1,6 +1,5 @@
 package com.da2.entities;
 
-import com.da2.helpers.Enums;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
@@ -16,13 +15,13 @@ public class Students {
     public final ArrayList<String> futurePlan;
 
     public final ArrayList<Company> recommended_companies;
+    public String aiming_for;
 
     public Students(JSONObject stud) {
         skillSet = new ArrayList<String>();
         interest = new ArrayList<String>();
         futurePlan = new ArrayList<String>();
         recommended_companies = new ArrayList<Company>();
-
 
         studentName = (String) stud.get("name");
         JSONArray skills = (JSONArray) stud.get("skillset");
@@ -32,6 +31,9 @@ public class Students {
         JSONArray future_plans = (JSONArray) stud.get("future_plans");
         for(Object f : future_plans) {
             futurePlan.add((String) f);
+        }
+        if(stud.get("aiming_for") != null) {
+            this.aiming_for = (String) stud.get("aiming_for");
         }
     }
 

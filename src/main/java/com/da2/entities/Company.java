@@ -1,6 +1,5 @@
 package com.da2.entities;
 
-import com.da2.helpers.Enums;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 

@@ -16,6 +16,10 @@ public class Enums {
         startUp, placement, higherStudies, civilService, internship
     };
 
+    public enum aiming_for {
+        big_companies, startups
+    }
+
     public enum domain {
         Android_development, ios_development, website_development, machine_learning, blockchain, deep_learning,
         reinforcement_learning

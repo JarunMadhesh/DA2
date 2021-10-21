@@ -2,11 +2,9 @@ package com.da2;
 
 import com.da2.entities.Company;
 import com.da2.entities.Students;
-import com.da2.helpers.Enums;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Objects;
+import java.time.LocalDateTime;
+import java.util.*;
 
 public class Cac {
 
@@ -15,7 +13,13 @@ public class Cac {
         for(Students s : students) {
             System.out.println("Companies recommended for "+ s.studentName);
             System.out.println("\tSkillSet: "+ s.skillSet);
-            System.out.println("\tLooking for: "+ s.futurePlan);
+            System.out.print("\tLooking for: "+ s.futurePlan);
+            if(s.aiming_for != null) {
+                System.out.println(" in "+ s.aiming_for);
+            } else {
+                System.out.print("\n");
+            }
+
             for(Company c :companies) {
                 boolean isFuturePlansForMatches = false;
                 for(Object x : s.futurePlan) {
@@ -35,8 +39,13 @@ public class Cac {
                         }
                     }
 
-                    if(isDomainMatch) {
-                        s.recommended_companies.add(c);
+                    boolean isStartup = LocalDateTime.now().getYear() - c.founding_year <=5;
+
+                    if(isDomainMatch ) {
+                        if((Objects.equals(s.aiming_for, "startups") && isStartup))
+                            s.recommended_companies.add(c);
+                        else if(!((Objects.equals(s.aiming_for, "startups") && !isStartup)))
+                            s.recommended_companies.add(c);
                     }
                 }
             }
@@ -55,15 +64,20 @@ public class Cac {
                     System.out.println("No recommendations found.");
                 }
             } else {
-                s.recommended_companies.sort((o1, o2) -> o1.pay+o1.annual_increment*3>o2.pay+o1.annual_increment*3?1:0);
+                s.recommended_companies.sort((o1, o2) -> Long.compare(o2.pay + o2.annual_increment * 3 - o2.probation_period * 5, o1.pay + o1.annual_increment * 3 - o1.probation_period * 5));
             }
 
+            int i=1;
             for(Company c : s.recommended_companies) {
-                System.out.println(c.companyName);
-                System.out.println("\tProvides"+ c.offers + " in " + c.domain + " at Rs." + c.pay + " LPA ");
+                System.out.println("Recommendation #"+ i);
+                System.out.println("\t" + c.companyName + ", founded in "+c.founding_year +", provides "+ c.offers + " in " + c.domain + " at Rs." + c.pay + " LPA ");
+                if(!Objects.equals(c.offers, "internship")) {
+                    System.out.println("\tHas a probation period of " + c.probation_period + " months and salary increase of Rs."+ c.annual_increment + " every year.");
+                }
+                i = i+1;
             }
 
-            System.out.println();
+            System.out.println("\n");
         }
 
     }

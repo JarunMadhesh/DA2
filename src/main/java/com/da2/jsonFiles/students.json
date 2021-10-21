@@ -2,18 +2,27 @@
   "students" : [
     {
       "name" : "Aravind",
-      "skillset" : ["Android_development"],
-      "future_plans" : ["placement"]
+      "skillset" : ["deep_learning"],
+      "future_plans" : ["placement", "internship"],
+      "aiming_for" : "big_companies"
     },
     {
-      "name" : "Aravind",
+      "name" : "Abhishek",
       "skillset" : ["Android_development"],
-      "future_plans" : ["internship"]
+      "future_plans" : ["internship"],
+      "aiming_for" : "startups"
     },
     {
       "name" : "Jarun",
-      "skillset" : ["deep_learning"],
-      "future_plans" : ["internship"]
+      "skillset" : ["deep_learning", "Android_development"],
+      "future_plans" : ["internship", "higherStudies"],
+      "aiming_for" : "big_companies"
+    },
+    {
+      "name" : "Roshan",
+      "skillset" : ["website_development"],
+      "future_plans" : ["placement"],
+      "aiming_for" : "big_companies"
     },
     {
       "name" : "Mohana Ganesh",

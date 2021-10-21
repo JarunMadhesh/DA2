@@ -11,10 +11,21 @@
     },
     {
       "name": "Infosys",
-      "domain" : "blockchain",
-      "offers" : "internship",
-      "pay": 2000,
-      "founding_year": 1981
+      "domain" : "website_development",
+      "offers" : "placement",
+      "pay": 200000,
+      "founding_year": 1981,
+      "annual_increment": 10000,
+      "probation_period": 3
+    },
+    {
+      "name": "Wipro",
+      "domain" : "website_development",
+      "offers" : "placement",
+      "pay": 200000,
+      "founding_year": 1981,
+      "annual_increment": 10000,
+      "probation_period": 2
     },
     {
       "name": "Zoho",
@@ -33,11 +44,25 @@
       "probation_period": 2
     },
     {
-      "name": "Zerodha",
+      "name": "Vivo",
       "domain" : "deep_learning",
       "offers" : "internship",
       "pay": 10000,
+      "founding_year": 2009
+    },
+    {
+      "name": "Zerodha",
+      "domain" : "Android_development",
+      "offers" : "internship",
+      "pay": 10000,
       "founding_year": 2019
+    },
+    {
+      "name": "Microsoft",
+      "domain" : "Android_development",
+      "offers" : "internship",
+      "pay": 30000,
+      "founding_year": 1975
     }
   ]
 }
