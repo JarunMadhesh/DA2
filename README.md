@@ -1,5 +1,5 @@
-# Job Recommendation - Digital Assignment-2 
-## CSE-2049 Context aware computing
+# Job Recommendation 
+## CSE-2049 Context aware computing - Digital Assignment-2 
 
 ### Problem statement:
 
