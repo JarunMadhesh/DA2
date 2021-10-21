@@ -24,7 +24,7 @@ job-recommendation/src/main/java/com/da2/jsonFiles/companies.json
 
 <br>
 Each student is given in such a way to satisfy the context types given in the problem statement.<br>
-Program outputs the contains the context, student profiles and the recommended jobs.<br>
+Program output has the context given in the problem statement, student profile and the recommended jobs.<br>
 <br>
 
 I have commented in the code for further explanation.
